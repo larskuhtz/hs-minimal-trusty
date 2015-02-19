@@ -1,0 +1,12 @@
+Minimal setup that is needed to run Haskell binaries build with GHC-7.8 on
+ubuntu trustyt.
+
+It's not really minimal and not all binaries are supported.  I add more
+dependencies as needed.
+
+The image includes a busybox for debugging pruposes.
+
+The image includes `strace`. That is useful to figure out what libraries are
+missing in case binary doesn't run. In order to use `strace` the container must
+be run with `--privileged=true`.
+
